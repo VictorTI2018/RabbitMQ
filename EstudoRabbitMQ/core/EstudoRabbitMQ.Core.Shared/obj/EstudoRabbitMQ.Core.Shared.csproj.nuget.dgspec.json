@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\RabbitMQ\\EstudoRabbitMQ\\core\\EstudoRabbitMQ.Core.Shared\\EstudoRabbitMQ.Core.Shared.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\RabbitMQ\\EstudoRabbitMQ\\core\\EstudoRabbitMQ.Core.Shared\\EstudoRabbitMQ.Core.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\RabbitMQ\\EstudoRabbitMQ\\core\\EstudoRabbitMQ.Core.Shared\\EstudoRabbitMQ.Core.Shared.csproj",
+        "projectName": "EstudoRabbitMQ.Core.Shared",
+        "projectPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\RabbitMQ\\EstudoRabbitMQ\\core\\EstudoRabbitMQ.Core.Shared\\EstudoRabbitMQ.Core.Shared.csproj",
+        "packagesPath": "C:\\Users\\Victor Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\RabbitMQ\\EstudoRabbitMQ\\core\\EstudoRabbitMQ.Core.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Victor Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.ecs.com.br/api/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://grupointerplayers.pkgs.visualstudio.com/_packaging/InterPlayers-Packages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

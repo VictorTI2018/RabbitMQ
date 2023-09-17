@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "y1fG4AGIjVByFWfxk9J682cbaHp/I7ObYYmE5vSjFnr28IRR/vW9R+DhKEJqDloxcKIVJkVrn1v9Mk6xfb7g5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\RabbitMQ\\EstudoRabbitMQ\\core\\EstudoRabbitMQ.Core.Shared\\EstudoRabbitMQ.Core.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Victor Silva\\.nuget\\packages\\serilog\\3.0.1\\serilog.3.0.1.nupkg.sha512",
+    "C:\\Users\\Victor Silva\\.nuget\\packages\\serilog.sinks.console\\4.1.0\\serilog.sinks.console.4.1.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Você está executando a operação 'restore' com uma fonte 'HTTP', 'http://nuget.ecs.com.br/api/nuget'. O acesso não HTTPS será removido em uma versão futura. Considere migrar para uma fonte 'HTTPS'."
+    }
+  ]
+}
