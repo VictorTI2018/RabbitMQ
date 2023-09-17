@@ -26,24 +26,30 @@ static void Execute()
     Console.WriteLine(" ");
 
     bool executando = true;
+    List<TodoRequest> todosRequest = new();
     while(executando)
     {
-        Console.Write("Mensagem: ");
-        var message = Console.ReadLine();
+        Console.Write("Titulo: ");
+        var title = Console.ReadLine();
 
-        if (string.IsNullOrEmpty(message)) throw new ArgumentException("Por favor, informe uma mensagem");
-
-        Console.WriteLine(" ");
-        logger.Information($"Queue = {key}");
-
-        QueueRequest queueRequest = new(key, connection, message);
-        QueueService.Execute(queueRequest.Message, queueRequest.Connection, queueRequest.Key);
-
-        logger.Information($"[Mensagem enviado] {message}");
+        if (string.IsNullOrEmpty(title)) throw new ArgumentException("Por favor, informe um titulo para tarefa");
 
         Console.WriteLine(" ");
 
-        Console.Write("Deseja enviar mais mensagem? (S/N) ");
+        Console.Write("Descrição: ");
+        var description = Console.ReadLine();
+
+        if (string.IsNullOrEmpty(description)) throw new ArgumentException("Por favor, informe uma descrição para tarefa");
+
+        TodoRequest dados = new(title, description);
+
+
+        todosRequest.Add(dados);
+
+
+        Console.WriteLine(" ");
+
+        Console.Write("Deseja cadastrar mais mensagem tarefas? (S/N) ");
         var decisao = Console.ReadLine();
 
         
@@ -57,7 +63,14 @@ static void Execute()
             executando = false;
         }
     }
-    
+
+    Console.WriteLine(" ");
+    logger.Information($"Queue = {key}");
+
+    QueueRequest queueRequest = new(key, connection, todosRequest);
+    QueueService.Execute(queueRequest.Todo, queueRequest.Connection, queueRequest.Key);
+
+    logger.Information($"[Tarefa enviada]...");
 
     Console.ReadKey();
 }

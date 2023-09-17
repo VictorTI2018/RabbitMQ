@@ -1,4 +1,6 @@
+using EstudoRabbitMQWorker.Model;
 using EstudoRabbitMQWorker.RequestModel;
+using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
@@ -57,8 +59,8 @@ namespace EstudoRabbitMQWorker
 
         private void Consumer_Received(object sender, BasicDeliverEventArgs e)
         {
-            _logger.LogInformation($"[Nova Mensagem | {DateTime.Now:yyyy-MM-dd HH:mm:ss}] " +
-                Encoding.UTF8.GetString(e.Body.ToArray()));
+            var dados = JsonConvert.DeserializeObject<List<Todo>>(Encoding.UTF8.GetString(e.Body.ToArray()));
+            _logger.LogInformation($"[Nova Tarefa | {DateTime.Now:yyyy-MM-dd HH:mm:ss}] " + _parametrosRequest.Key);
         }
     }
 }

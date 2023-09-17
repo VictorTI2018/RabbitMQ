@@ -46,3 +46,4 @@ C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\RabbitMQ\Estud
 C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\RabbitMQ\EstudoRabbitMQWorker\EstudoRabbitMQWorker\obj\Debug\net6.0\EstudoRabbitMQWorker.pdb
 C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\RabbitMQ\EstudoRabbitMQWorker\EstudoRabbitMQWorker\obj\Debug\net6.0\EstudoRabbitMQWorker.genruntimeconfig.cache
 C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\RabbitMQ\EstudoRabbitMQWorker\EstudoRabbitMQWorker\obj\Debug\net6.0\ref\EstudoRabbitMQWorker.dll
+C:\Users\Victor Silva\OneDrive - Verity\Documentos\Victor\Estudos\RabbitMQ\EstudoRabbitMQWorker\EstudoRabbitMQWorker\bin\Debug\net6.0\Newtonsoft.Json.dll
